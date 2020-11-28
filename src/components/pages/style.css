@@ -1,0 +1,16 @@
+.about {
+  height: 30%;
+  width: 30%;
+  justify-content: center;
+
+}
+
+img{
+  height: 60%;
+  width: 60%;
+  justify-content: center;
+}
+
+.paragraph {
+  justify-content: center;
+}
