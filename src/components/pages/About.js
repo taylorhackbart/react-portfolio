@@ -1,7 +1,7 @@
 import React from "react";
 import headshot from "./images/taylor-photo.JPG";
 import "./style.css";
-import resume from "./images/resume.pdf";
+
 
 function About() {
   return (
