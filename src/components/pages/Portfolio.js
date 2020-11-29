@@ -18,7 +18,7 @@ function Portfolio() {
         <div className="row">
           <div className="col-md-4">
             <h4> Let's Hit the Slopes</h4>
-            <div className="card" style={{ width: "25rem" }}>
+            <div className="card" style={{ width: "30rem" }}>
             
               <img src={pila} className="card-img-top" alt="project1"></img>
               <div className="card-body">
@@ -239,7 +239,6 @@ function Portfolio() {
               <ul className="list-group list-group-flush">
                 <li className="list-group-item">
                   <a href={resumepdf} target="_blank" rel="noreferrer">
-                    {" "}
                     Load Resume
                   </a>
                 </li>
