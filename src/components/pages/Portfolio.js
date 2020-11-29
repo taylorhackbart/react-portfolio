@@ -6,7 +6,7 @@ import resume from "./images/resumeimg.png";
 import scheduler from "./images/scheduler.png";
 import burger from "./images/burger.png";
 import resumepdf from "./images/resume.pdf";
-import Collapsible from "react-collapsible"
+import Collapsible from "react-collapsible";
 
 function Portfolio() {
   return (
@@ -19,16 +19,15 @@ function Portfolio() {
           <div className="col-md-4">
             <h4> Let's Hit the Slopes</h4>
             <div className="card" style={{ width: "30rem" }}>
-            
               <img src={pila} className="card-img-top" alt="project1"></img>
               <div className="card-body">
                 <Collapsible trigger="Read More">
-                <p className="card-text">
-                  To the left is my first project I generated with a team. We
-                  created a website that will show the weather conditions of a
-                  mountain in Italy, along with a currency converter from Euros
-                  to your home currency.
-                </p>
+                  <p className="card-text">
+                    To the left is my first project I generated with a team. We
+                    created a website that will show the weather conditions of a
+                    mountain in Italy, along with a currency converter from
+                    Euros to your home currency.
+                  </p>
                 </Collapsible>
               </div>
               <ul className="list-group list-group-flush">
@@ -59,24 +58,25 @@ function Portfolio() {
             <div className="card" style={{ width: "30rem" }}>
               <img src={hotel} className="card-img-top" alt="project1"></img>
               <div className="card-body">
-              <Collapsible trigger="Read More">
-                <p className="card-text">
-                  Hotel Motel is a guest management system designed for small
-                  occupancy hotels and motels. The application is simple to use,
-                  and allows the user to see all of the guest information and
-                  hotel occupancy on one screen. The user can input information
-                  about a guest when they want to save a reservation (guest
-                  name, number of guests, number of rooms, check-in date,
-                  check-out date, and guest phone number). This information is
-                  sent to the database and stored, a new guest is created and
-                  added to the guest check-in column. Once a guest is ready to
-                  check in the user can click the check in button and the guest
-                  is moved to the guest check-out column. The daily-occupancy
-                  updates the hotel data so the user can easily see how many
-                  rooms are still available for reservation. When a guest is
-                  checked-out, the the guest is removed from the database and
-                  the room occupancy is updated accordingly.
-                </p>
+                <Collapsible trigger="Read More">
+                  <p className="card-text">
+                    Hotel Motel is a guest management system designed for small
+                    occupancy hotels and motels. The application is simple to
+                    use, and allows the user to see all of the guest information
+                    and hotel occupancy on one screen. The user can input
+                    information about a guest when they want to save a
+                    reservation (guest name, number of guests, number of rooms,
+                    check-in date, check-out date, and guest phone number). This
+                    information is sent to the database and stored, a new guest
+                    is created and added to the guest check-in column. Once a
+                    guest is ready to check in the user can click the check in
+                    button and the guest is moved to the guest check-out column.
+                    The daily-occupancy updates the hotel data so the user can
+                    easily see how many rooms are still available for
+                    reservation. When a guest is checked-out, the the guest is
+                    removed from the database and the room occupancy is updated
+                    accordingly.
+                  </p>
                 </Collapsible>
               </div>
               <ul className="list-group list-group-flush">
@@ -107,14 +107,14 @@ function Portfolio() {
             <div className="card" style={{ width: "30rem" }}>
               <img src={burger} className="card-img-top" alt="project1"></img>
               <div className="card-body">
-              <Collapsible trigger="Read More">
-                <p className="card-text">
-                  For this assignment, we created a website that will allow the
-                  user to add/order a burger that they would like to eat. Once
-                  the burger has been added, they can click the "devour" button,
-                  and it will be shown on the right side of the screen as
-                  devoured.
-                </p>
+                <Collapsible trigger="Read More">
+                  <p className="card-text">
+                    For this assignment, we created a website that will allow
+                    the user to add/order a burger that they would like to eat.
+                    Once the burger has been added, they can click the "devour"
+                    button, and it will be shown on the right side of the screen
+                    as devoured.
+                  </p>
                 </Collapsible>
               </div>
               <ul className="list-group list-group-flush">
@@ -124,7 +124,6 @@ function Portfolio() {
                     target="_blank"
                     rel="noreferrer"
                   >
-                   
                     Repository Link
                   </a>
                 </li>
@@ -153,15 +152,15 @@ function Portfolio() {
                 alt="project1"
               ></img>
               <div className="card-body">
-              <Collapsible trigger="Read More">
-                <p className="card-text">
-                  This Work Day Planner will allow you to write in plans for the
-                  day by the hour, and save them so you can access them
-                  throughout the day by clicking "save". This website will
-                  highlight the current time in red, have the past times in
-                  grey, and the future tasks highlighted in green. To access the
-                  live website, click the "Work Day Scheduler".
-                </p>
+                <Collapsible trigger="Read More">
+                  <p className="card-text">
+                    This Work Day Planner will allow you to write in plans for
+                    the day by the hour, and save them so you can access them
+                    throughout the day by clicking "save". This website will
+                    highlight the current time in red, have the past times in
+                    grey, and the future tasks highlighted in green. To access
+                    the live website, click the "Work Day Scheduler".
+                  </p>
                 </Collapsible>
               </div>
               <ul className="list-group list-group-flush">
@@ -193,12 +192,12 @@ function Portfolio() {
             <div className="card" style={{ width: "30rem" }}>
               <img src={password} className="card-img-top" alt="project1"></img>
               <div className="card-body">
-              <Collapsible trigger="Read More">
-                <p className="card-text">
-                  Here, we have a random password generator. This will prompt
-                  you to choose a length for your password, approve various
-                  parameters, and finally generate a random password.
-                </p>
+                <Collapsible trigger="Read More">
+                  <p className="card-text">
+                    Here, we have a random password generator. This will prompt
+                    you to choose a length for your password, approve various
+                    parameters, and finally generate a random password.
+                  </p>
                 </Collapsible>
               </div>
               <ul className="list-group list-group-flush">
@@ -230,10 +229,8 @@ function Portfolio() {
             <div className="card" style={{ width: "30rem" }}>
               <img src={resume} className="card-img-top" alt="project1"></img>
               <div className="card-body">
-               
                 <p className="card-text">
-                  To load my resume in full screen, please click the image on
-                  the left.
+                  To load my resume in full screen, please click below.
                 </p>
               </div>
               <ul className="list-group list-group-flush">

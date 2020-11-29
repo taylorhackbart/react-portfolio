@@ -90,6 +90,9 @@ class Contact extends Component {
               </li>
             </ul>
           </section>
+
+          <h3>Send Taylor a Message:   </h3>
+
           <SubmitForm
           firstName={this.state.firstName}
           lastName={this.state.lastName}

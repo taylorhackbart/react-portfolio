@@ -1,9 +1,12 @@
 .about {
-  height: 30%;
-  width: 30%;
+  height: 80%;
+  width: 80%;
   display: block;
   margin: auto;
-  padding-bottom: 20px;
+  padding-top: 40px;
+}
+h1.aboutme{
+  margin-left: 70px;
 }
 .block-header{
   text-align: center;
@@ -13,6 +16,12 @@
 }
 li {
   list-style-type: none;
+}
+#inputName{
+  width: 100%;
+}
+#inputMessage{
+  height: 100px;
 }
 img {
   height: 200px;
@@ -25,6 +34,12 @@ img {
 }
 span.Collapsible__trigger.is-closed {
   font-size: larger;
+  background-color: white;
+  border-radius: 10%;
+  color: black;
+  font-weight: bold;
+  margin-left:100px;
+  
 }
 
 .app-body{
@@ -33,9 +48,18 @@ span.Collapsible__trigger.is-closed {
 }
 span.Collapsible__trigger.is-open{
  font-style: italic;
+ background-color: white;
+ border-radius: 10%;
+ color: navy;
+ font-weight: bold;
+ margin-left:100px;
 }
 
-
+h3{
+  margin-left: 30px;
+  padding-bottom: 20px;
+  padding-top: 20px;
+}
 .card {
   margin-top: 20px;
   max-height: 700px;

@@ -3,7 +3,7 @@ import React from "react"
 function SubmitForm(props) {
   return (
   <form>
-  <div className="form-row">
+  <div className="form-row container">
     <div className="form-group col-md-6">
       <label htmlFor="inputName">First Name</label>
       <input type="text" 
@@ -27,7 +27,7 @@ function SubmitForm(props) {
     </div>
   </div>
   
-  <div className="form-group">
+  <div className="form-group col-md-12">
     <label htmlFor="inputAddress">Email</label>
     <input type="text" 
     className="form-control" 
@@ -39,7 +39,7 @@ function SubmitForm(props) {
     ></input>
   </div>
 
-  <div className="form-group">
+  <div className="form-group col-md-12">
     <label htmlFor="inputSubject">Subject</label>
     <input type="text" 
     className="form-control" 
@@ -51,7 +51,7 @@ function SubmitForm(props) {
     ></input>
   </div>
   <div className="form-row">
-    <div className="form-group col-md-6">
+    <div className="form-group col-md-12 message">
       <label htmlFor="inputMessage">Message</label>
       <input type="text" 
       className="form-control" 
@@ -62,7 +62,9 @@ function SubmitForm(props) {
       ></input>
     </div>
   </div>
-  <button type="submit" onClick={props.handleFormSubmit}className="btn btn-primary">Send Message</button>
+  <div className="form-row col-md-12">
+  <button type="submit" onClick={props.handleFormSubmit} className="btn btn-primary" >Send Message</button>
+</div>
 </form>
 
   )
