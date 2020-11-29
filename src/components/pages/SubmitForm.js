@@ -64,6 +64,7 @@ function SubmitForm(props) {
   </div>
   <div className="form-row col-md-12">
   <button type="submit" onClick={props.handleFormSubmit} className="btn btn-primary" >Send Message</button>
+  <p style={{display:"none"}}> Message sent!</p>
 </div>
 </form>
 

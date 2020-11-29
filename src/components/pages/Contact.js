@@ -18,7 +18,7 @@ class Contact extends Component {
 
   handleFormSubmit = event => {
     event.preventDefault();
-
+    alert("Message Sent!")
     API.savePost ({
         firstName: this.state.firstName,
         lastName: this.state.lastName,
@@ -28,6 +28,7 @@ class Contact extends Component {
    
     })
     .then(function(response) {
+      
       return response.json()
     }).then(function(body) {
       console.log(body);
@@ -90,8 +91,8 @@ class Contact extends Component {
               </li>
             </ul>
           </section>
-
-          <h3>Send Taylor a Message:   </h3>
+          
+          <h3> Send Taylor a Message:   </h3>
 
           <SubmitForm
           firstName={this.state.firstName}
@@ -100,7 +101,7 @@ class Contact extends Component {
           subject={this.state.subject}
           message={this.state.message}
           handleFormSubmit={this.handleFormSubmit}
-          handleInputChane={this.handleInputChange}
+          handleInputChange={this.handleInputChange}
           />
         </div>
       </div>

@@ -41,7 +41,7 @@ function About() {
           </p>
 
           <p>
-            As heartbreaking as it was to see the corals dimish in front of my
+            As heartbreaking as it was to see the corals diminish in front of my
             eyes, and as many bug bites, missed showers, and grueling hot days I
             had, I wouldn't trade my experience for anything.
           </p>
