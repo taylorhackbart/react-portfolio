@@ -4,6 +4,7 @@ import "./style.css"
 
 function About() {
   return (
+    <div className = "container-fluid">
     <div className = "container">
       <div className= "row">
       <h1>About Page</h1>
@@ -25,6 +26,7 @@ function About() {
         If you would like to learn more about the work I did in Mexico, please take a look at my <a href="assets/images/resume.pdf" target="_blank" rel="noreferrer">resume</a>.
       </p>
     </div>
+  </div>
   </div>
   );
 }
