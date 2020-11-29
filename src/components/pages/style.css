@@ -8,7 +8,12 @@
 .block-header{
   text-align: center;
 }
-
+.contact {
+  text-align: center;
+}
+li {
+  list-style-type: none;
+}
 img {
   height: 200px;
   width: 300px;
@@ -20,10 +25,12 @@ img {
 }
 span.Collapsible__trigger.is-closed {
   font-size: larger;
-
-
 }
 
+.app-body{
+  font-family: 'Raleway', sans-serif;
+
+}
 span.Collapsible__trigger.is-open{
  font-style: italic;
 }
