@@ -1,32 +1,50 @@
 .about {
   height: 30%;
   width: 30%;
-  justify-content: center;
-
-}
-
-img{
-  height: 60%;
-  width: 60%;
   display: block;
-  margin: auto; 
+  margin: auto;
+  padding-bottom: 20px;
 }
-
+.block-header{
+  text-align: center;
+}
+img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  display: block;
+  margin: auto;
+  border-radius: 3%;
+  
+}
+.card {
+  margin-top: 20px;
+  max-height: 700px;
+  overflow-y: auto;
+  margin: auto;
+}
+h4{
+  text-align: center;
+  padding-bottom: 10px;
+}
 .paragraph {
   display: block;
   margin: auto;
 }
-.cards:hover {
-  display: block;
-  
-}
+
 .nav {
-  background: linear-gradient(60deg, white, lightblue, 100%);
+  background: linear-gradient(60deg, white, lightblue);
   height: 50px;
   box-shadow: 0px 0px 10px #000;
   font-size: 24px;
 }
 
 .container-fluid {
-  background: linear-gradient( white, lightblue)
+  background: linear-gradient(white, lightblue);
+  padding-bottom: 20%;
+}
+
+.container-fluid-portfolio {
+  background: linear-gradient(white, lightblue);
+  padding-bottom: 70%;
 }
