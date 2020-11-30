@@ -2,11 +2,11 @@
 
 ## Description
 
-This portfolio highlights some of Taylor's best work. It allows you to read about her life pre-coding, check out some of the projects she is proud of developing, and contact her directly.
+This portfolio highlights some of Taylor's best work. It allows you to read about her life pre-coding, check out some of the projects she is proud of developing, and contact her directly. Access the live site deployed through Heroku <a href="https://taylors-portfolio.herokuapp.com/" > here. </a>
 
 ## Technologies Used
 
-ReactJS, CSS, HTML, Bootstrap, Mongoose
+ReactJS, CSS, HTML, Bootstrap, Mongoose, Heroku
 
 ## Future Development
 
