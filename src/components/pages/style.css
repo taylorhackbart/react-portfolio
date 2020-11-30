@@ -87,6 +87,9 @@ h4{
   padding-bottom: 20%;
 }
 
+h2.contact{
+  margin-left: 35px
+}
 .container-fluid-portfolio {
   background: linear-gradient(white, lightblue);
   padding-bottom: 70%;

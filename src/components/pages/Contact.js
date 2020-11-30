@@ -61,8 +61,8 @@ class Contact extends Component {
       <div className="container">
         <div className="row">
           <section className="contact">
-            <h2>Contact Info</h2>
-            <ul>
+            <h2 className="contact" >Contact Info</h2>
+            <ul className="contact">
               <li>
                 <strong>Email:</strong> taylor.hackbart@gmail.com
               </li>
