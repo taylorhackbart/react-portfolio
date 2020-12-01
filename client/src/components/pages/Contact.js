@@ -14,7 +14,6 @@ function Contact() {
     event.preventDefault();
     API.saveUser(user).then((resp) => {
       console.log(resp);
-      resp.json("success");
     });
   };
 
