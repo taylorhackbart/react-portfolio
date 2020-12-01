@@ -1,38 +1,25 @@
-import React, {Component} from "react";
+import React, {useState} from "react";
 import SubmitForm from "./SubmitForm.js"
 import API from "../../utils/API"
-class Contact extends Component {
-  state = {
-    firstName: "",
-    lastName: "",
-    subject: "",
-    message: "",
-    email: ""
-  };
-  handleInputChange = event => {
-    const {name, value} = event.target;
-    this.setState({
-      [name]:value
+function Contact () {
+  const [user, setUser] = useState({
+      firstName: "",
+      lastName: "",
+      subject: "",
+      message: "",
+      email: ""
+  })
+  const onSubmit = event => {
+    event.preventDefault()
+    API.saveUser(user).then(resp => {
+      console.log(resp)
     })
   }
 
-  handleFormSubmit = event => {
+  const handleInputChange = event => {
     event.preventDefault();
-    alert("Message Sent!")
-    API.savePost ({
-        firstName: this.state.firstName,
-        lastName: this.state.lastName,
-        email: this.state.email,
-        subject: this.state.subject,
-        message: this.state.message,
-   
-    })
-    .then(function(response) {
-      
-      return response.json()
-    }).then(function(body) {
-      console.log(body);
-    });
+    console.log(event.target.value)
+    setUser({...user, [event.target.name]: event.target.value})
 
     // if (!this.state.firstName || !this.state.lastName){
     //   alert("Must fill in first and last name fields")
@@ -46,16 +33,16 @@ class Contact extends Component {
     //   alert("Message sent!")
     // }
 
-    this.setState({
-      firstName: "",
-      lastName: "",
-      subject: "",
-      message: "",
-      email: ""
-    })
-    window.location.reload();
+    // this.setState({
+    //   firstName: "",
+    //   lastName: "",
+    //   subject: "",
+    //   message: "",
+    //   email: ""
+    // })
+    // window.location.reload();
   }
-  render(){
+
   return (
     <div className="container-fluid-portfolio">
       <div className="container">
@@ -95,19 +82,20 @@ class Contact extends Component {
           <h3> Send Taylor a Message:   </h3>
 
           <SubmitForm
-          firstName={this.state.firstName}
-          lastName={this.state.lastName}
-          email={this.state.email}
-          subject={this.state.subject}
-          message={this.state.message}
-          handleFormSubmit={this.handleFormSubmit}
-          handleInputChange={this.handleInputChange}
+          firstName={user.firstName}
+          lastName={user.lastName}
+          email={user.email}
+          subject={user.subject}
+          message={user.message}
+          // handleFormSubmit={this.handleFormSubmit}
+          handleInputChange={handleInputChange}
+          onSubmit = {onSubmit}
           />
         </div>
       </div>
     </div>
   );
 }
-}
+
 
 export default Contact;
