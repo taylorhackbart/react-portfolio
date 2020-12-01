@@ -1,8 +1,9 @@
-const db = require("../models/model.js");
+const User = require("../models/model.js");
 
 module.exports = {
   create: function(req, res){
-    db.User
+    console.log("here")
+    User
     .create(req.body)
     .then(dbUser => res.json(dbUser))
     .catch(err => res.status(422).json(err));

@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import SubmitForm from "./SubmitForm.js";
 import API from "../../utils/API";
 function Contact() {
-  const [userArr, setUserArr] = useState([])
   const [user, setUser] = useState({
     firstName: "",
     lastName: "",
@@ -11,15 +10,12 @@ function Contact() {
     email: "",
   });
   const onSubmit = (event) => {
+    console.log("submit");
     event.preventDefault();
-    API.saveUser(user).then(resp => {
-      const newUser = user.slice(0);
-      newUser.push(resp.data)
-      console.log(newUser)
-       setUserArr(newUser);
-    
-    })
- 
+    API.saveUser(user).then((resp) => {
+      console.log(resp);
+      resp.json("success");
+    });
   };
 
   const handleInputChange = (event) => {
@@ -72,7 +68,7 @@ function Contact() {
             subject={user.subject}
             message={user.message}
             handleInputChange={handleInputChange}
-            onClick={onSubmit}
+            onSubmit={onSubmit}
           />
         </div>
       </div>
