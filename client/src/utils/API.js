@@ -1,7 +1,7 @@
 import axios from "axios";
 
-export default {
+export default  {
   saveUser: function(userData) {
-    return axios.post("/contact/api/user", userData);
+    return axios.post("contact/api/contact", userData);
   }
 };
