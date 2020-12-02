@@ -21,7 +21,7 @@ mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/portfolio"),
   useCreateIndex: true,
   useFindAndModify: false}
 
-// Start the API server
+// Start the API server 
 app.listen(PORT, function() {
   console.log(`🌎  ==> API Server now listening on PORT ${PORT}!`);
 });
