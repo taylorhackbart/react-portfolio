@@ -14,7 +14,7 @@ app.use(express.json());
 //   app.use(express.static("client/build"));
 // }
 app.get("*", function(req, res) {
-  res.sendFile(path.join(__dirname, "./client/index.html"));
+  res.sendFile(path.join(__dirname, "./client/public/index.html"));
 });
 // Connect to the Mongo DB
 mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/portfolio"), 
