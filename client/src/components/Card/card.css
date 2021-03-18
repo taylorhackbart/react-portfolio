@@ -1,0 +1,31 @@
+.card-title{
+  font-family: 'Bebas Neue', cursive;
+  font-size: 200%;
+}
+.main-port-body{
+  background-color: rgb(230, 246, 252);
+  margin: 2%;
+  border-radius: 5%;
+  box-shadow: 1px 5px 5px 3px grey;
+}
+span.Collapsible__trigger.is-closed {
+  font-size: 150%;
+  border-radius: 5%;
+  color: black;
+  margin-left:120px;
+  font-family: 'Bebas Neue', cursive;
+}
+span.Collapsible__trigger.is-open{
+  font-style: italic;
+  border-radius: 10%;
+  color: navy;
+  margin-left:120px;
+}
+.list-group-item{
+  text-align: center;
+}
+.card-text{
+  display: block;
+  margin-left: 1%;
+  margin-right: 1%;
+}

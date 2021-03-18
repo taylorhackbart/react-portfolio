@@ -1,8 +1,8 @@
 const router = require("express").Router();
 const controller = require("../../controllers/userController.js");
 
-// Matches with "/api/books"
-router.route("/contact")
-  .post(controller.create);
+router.route("/")
+  .post(controller.create)
+  .get(controller.findAll)
 
 module.exports = router;

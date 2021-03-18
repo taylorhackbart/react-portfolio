@@ -1,6 +1,13 @@
-import React from "react"
+import React, {useState} from "react"
+import { useForm } from '@formspree/react';
+import API from "../../utils/API"
 
 function SubmitForm(props) {
+  // const [state, handleSubmit] = useForm('signupForm');
+  // if (state.succeeded) {
+  //   return <div>Your message to Taylor has been sent!</div>;
+  // }
+
   return (
   <form>
   <div className="form-row container">
@@ -10,7 +17,7 @@ function SubmitForm(props) {
       className="form-control" 
       id="inputName"
       name="firstName"
-      value={props.value}
+      value={props.firstName}
       onChange={props.handleInputChange}
       ></input>
     </div>
@@ -21,10 +28,10 @@ function SubmitForm(props) {
       className="form-control" 
       id="inputName"
       name="lastName"
-      value={props.value}
+      value={props.lastName}
       onChange={props.handleInputChange}
       ></input>
-    </div>
+    </div> 
   </div>
   
   <div className="form-group col-md-12">
@@ -33,8 +40,8 @@ function SubmitForm(props) {
     className="form-control" 
     id="inputEmail" 
     placeholder="jane.doe@email.com"
-    name="firstName"
-    value={props.value}
+    name="email"
+    value={props.email}
     onChange={props.handleInputChange}
     ></input>
   </div>
@@ -46,7 +53,7 @@ function SubmitForm(props) {
     id="inputSubject" 
     placeholder="Job Opportunity"
     name="subject"
-    value= {props.value}
+    value= {props.subject}
     onChange={props.handleInputChange}
     ></input>
   </div>
@@ -57,7 +64,7 @@ function SubmitForm(props) {
       className="form-control" 
       id="inputMessage"
       name="message"
-      value={props.value}
+      value={props.message}
       onChange={props.handleInputChange}
       ></input>
     </div>
