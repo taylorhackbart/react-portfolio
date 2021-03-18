@@ -4,7 +4,6 @@ import NavBar from "./components/NavBar";
 import About from "./components/pages/About";
 import Portfolio2 from "./components/pages/Portfolio2";
 import Contact from "./components/pages/Contact";
-// import "./components/pages/style.css";
 import "./app.css"
 
 function App() {
