@@ -20,7 +20,6 @@ const options = {
   useUnifiedTopology: true,
   useCreateIndex: true,
   useFindAndModify: false
-  
 }
 // Connect to the Mongo DB
 mongoose.connect(
